@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "jKNyKDN3yaKnX35lpoPuVg29gLWbVZ3lW0Om3tGGBz0=",
+  "Source": "Q1WebAPI",
+  "BasePath": "_content/Q1WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
