@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Q1WebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e28734474302aacc14d6cb5192f41123fa868df")]
 [assembly: System.Reflection.AssemblyProductAttribute("Q1WebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Q1WebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
