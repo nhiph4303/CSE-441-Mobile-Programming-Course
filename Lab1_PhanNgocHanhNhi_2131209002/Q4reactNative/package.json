@@ -1,5 +1,5 @@
 {
-  "name": "Q4reactNative",
+  "name": "Q4ReactNative",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -10,7 +10,8 @@
     "test": "jest"
   },
   "dependencies": {
-    "Q4reactNative": "file:",
+    "@react-native-community/cli": "latest",
+    "Q4ReactNative": "file:",
     "react": "19.0.0",
     "react-native": "0.79.1"
   },

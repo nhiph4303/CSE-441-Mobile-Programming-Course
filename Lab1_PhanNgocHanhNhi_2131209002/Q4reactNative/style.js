@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-export default style = StyleSheet.create({
+export default styles = StyleSheet.create({
   container: {backgroundColor: '#fff'},
   box: {
     width: 100,
@@ -7,5 +7,6 @@ export default style = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     margin: 20,
+    borderRadius:10,
   },
 });

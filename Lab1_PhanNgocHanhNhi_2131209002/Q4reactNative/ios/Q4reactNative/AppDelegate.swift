@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     window = UIWindow(frame: UIScreen.main.bounds)
 
     factory.startReactNative(
-      withModuleName: "Q4reactNative",
+      withModuleName: "Q4ReactNative",
       in: window,
       launchOptions: launchOptions
     )

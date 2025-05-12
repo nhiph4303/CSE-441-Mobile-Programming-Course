@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Twxr, Alert, Button} from 'react-native';
+import {View, Text, Alert, Button} from 'react-native';
 import styles from './style';
 function ClickOnTheSquare(value) {
   Alert.alert(value);
