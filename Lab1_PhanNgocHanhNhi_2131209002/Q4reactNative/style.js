@@ -7,6 +7,6 @@ export default styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     margin: 20,
-    borderRadius:10,
+    borderRadius: 20,
   },
 });

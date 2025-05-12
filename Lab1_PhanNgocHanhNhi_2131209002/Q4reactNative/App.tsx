@@ -21,7 +21,6 @@ import data from './Data';
 import Square from './Square';
 import styles from './style';
 
-
 function App(): React.JSX.Element {
   return (
     <ScrollView style={styles.container}>
