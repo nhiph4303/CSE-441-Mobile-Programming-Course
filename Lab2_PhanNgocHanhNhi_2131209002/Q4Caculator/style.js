@@ -25,7 +25,7 @@ export default StyleSheet.create({
     height: 70,
     justifyContent: 'center',
     alignItems: 'center',
-    paddingTop: 8,
+    paddingTop: 1,
     marginRight: 4,
     marginBottom: 5,
     elevation: 5,
