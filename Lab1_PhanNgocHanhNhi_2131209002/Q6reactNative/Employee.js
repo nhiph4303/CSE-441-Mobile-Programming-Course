@@ -23,7 +23,7 @@ const Employee = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Employee information entry</Text>
+      <Text style={styles.title}>Employee Information</Text>
       <Text style={styles.label}>Full name</Text>
       <TextInput
         style={styles.input}
@@ -54,12 +54,12 @@ const Employee = () => {
 const styles = StyleSheet.create({
   container: {
     padding: 20,
-    marginBottom: 20,
-    backgroundColor: '#fff',
+    marginBottom: 10,
   },
   title: {
     fontSize: 20,
     fontWeight: 'bold',
+    marginTop: 15,
     marginBottom: 15,
     color: 'red',
   },
