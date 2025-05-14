@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet, Alert } from 'react-native';
 
-const Employee = () => {
+const Employee = ({onUpdateSuccess}) => {
   const [fullName, setFullName] = useState('');
   const [age, setAge] = useState('');
   const [specializedOccupation, setSpecializedOccupation] = useState('');

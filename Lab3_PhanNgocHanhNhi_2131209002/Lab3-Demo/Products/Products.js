@@ -7,12 +7,12 @@ import {
   StyleSheet,
 } from 'react-native';
 import {Button} from 'react-native-paper';
-
+import {red100} from 'react-native-paper/lib/typescript/styles/themes/v2/colors';
+import {SafeAreaView} from 'react-native-safe-area-context';
 
 const Products = () => {
   const [data, setData] = useState([]);
   const filePath = 'https://dummyjson.com/products/';
-console.log("World");
 
   useEffect(() => {
     fetch(filePath)
@@ -60,7 +60,7 @@ console.log("World");
   );
 
   return (
-
+    <SafeAreaView>
       <View style={styles.container}>
         <Text style={styles.header}>Product list</Text>
         <FlatList
@@ -69,7 +69,7 @@ console.log("World");
           keyExtractor={item => item.id.toString()}
         />
       </View>
- 
+    </SafeAreaView>
   );
 };
 

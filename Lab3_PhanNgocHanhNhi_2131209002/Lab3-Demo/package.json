@@ -1,5 +1,5 @@
 {
-  "name": "Q6reactNative",
+  "name": "Lab3",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -10,9 +10,11 @@
     "test": "jest"
   },
   "dependencies": {
-    "Q6reactNative": "file:",
+    "Lab3": "file:",
     "react": "19.0.0",
-    "react-native": "0.79.2"
+    "react-native": "0.79.2",
+    "react-native-paper": "^5.14.1",
+    "react-native-safe-area-context": "^5.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
