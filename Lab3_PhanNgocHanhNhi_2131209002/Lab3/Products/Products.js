@@ -124,8 +124,10 @@ const styles = StyleSheet.create({
     gap:8,
   },
   button: {
-    borderRadius: 1,
+    borderRadius: 50,
     backgroundColor: '#2296f3',
+    paddingLeft: 10,
+    paddingRight:10,
   },
   buttonContent:{
     paddingHorizontal:0,

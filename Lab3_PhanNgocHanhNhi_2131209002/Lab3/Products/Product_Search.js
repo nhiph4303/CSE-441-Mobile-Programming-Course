@@ -4,7 +4,7 @@ import { View, Text } from 'react-native';
 const Product_Add = () => {
   return (
     <View>
-      <Text>Add Product Screen</Text>
+      <Text>Product Search Screen</Text>
     </View>
   );
 };
