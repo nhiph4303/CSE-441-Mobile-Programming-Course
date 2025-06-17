@@ -1,10 +1,8 @@
 import 'react-native-gesture-handler';
-import React from 'react';
 import { StyleSheet, View, TouchableOpacity, Image, Text } from 'react-native';
-import Icon from 'react-native-vector-icons/MaterialIcons';
-import PropTypes from 'prop-types';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 
-const ContactThumb = ({ name, phone, avatar, textColor, onPress }) => {
+const ContactThum = ({ name, phone, avatar, textColor, onPress }) => {
   const colorStyle = {
     color: textColor,
   };
@@ -14,42 +12,27 @@ const ContactThumb = ({ name, phone, avatar, textColor, onPress }) => {
   return (
     <View style={styles.container}>
       <ImageContact onPress={onPress}>
-        <Image
-          source={{
-            uri: avatar,
-          }}
-          style={styles.avatar}
-        />
+        <Image source={{ uri: avatar }} style={styles.avatar} />
       </ImageContact>
-      {name !== '' && <Text style={[styles.name, colorStyle]}>{name}</Text>}
-      {phone !== '' && (
+      {name && <Text style={[styles.name, colorStyle]}>{name}</Text>}
+      {phone && phone !== '' && (
         <View style={styles.phoneSection}>
-          <Icon name="phone" size={16} style={{ color: textColor }} />
-          <Text style={[styles.phone, colorStyle]}>{phone}</Text>
+          <MaterialCommunityIcons
+            name="phone"
+            size={16}
+            style={{ color: 'white' }}
+          />
+          <Text style={[styles.phone, colorStyle.color]}>{phone}</Text>
         </View>
       )}
     </View>
   );
 };
 
-ContactThumb.propTypes = { // Sửa PropTypes thành propTypes
-  name: PropTypes.string,
-  avatar: PropTypes.string,
-  phone: PropTypes.string,
-  onPress: PropTypes.func,
-};
-
-ContactThumb.defaultProps = {
-  name: '',
-  phone: '',
-  textColor: 'white',
-  onPress: null,
-};
-
 const styles = StyleSheet.create({
   container: {
     paddingVertical: 30,
-    marginHorizontal: 15,
+    paddingHorizontal: 15,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -65,10 +48,11 @@ const styles = StyleSheet.create({
     marginTop: 24,
     marginBottom: 2,
     fontWeight: 'bold',
+    color: '#ffff',
   },
   phoneSection: {
     flexDirection: 'row',
-    marginTop: 4,
+    marginTop: 0,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -76,7 +60,8 @@ const styles = StyleSheet.create({
     marginLeft: 4,
     fontSize: 16,
     fontWeight: 'bold',
+    color: '#ffff',
   },
 });
 
-export default ContactThumb;
+export default ContactThum;
